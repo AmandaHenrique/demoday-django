@@ -1,3 +1,16 @@
+@media (max-width: 850px){
+    
+    div.conteudo{
+        flex-direction: column;
+    }
+
+    .conteudo div{
+        width: 60%;
+    }
+}
+
+
+
 @media (max-width: 768px){
 
     #hamburguer{
@@ -7,30 +20,6 @@
 
     nav ul{
         display: none;
-    }
-
-    section{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 150vh;
-    }
-
-
-
-
-    
-    section div{
-        height: 30vh;
-        width: 60vw;
-    }
-
-    section#sobre{
-        height: 200vh;
-    }
-
-    section#sobre div{
-        height: 65vh;
     }
 
 }
