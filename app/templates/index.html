@@ -3,20 +3,35 @@
 {% load staticfiles %}
 
 {% block content %}
-<nav>
-    <div id="nav-logo">
-        <a href="">O LOGO AQUI</a>
-    </div>
-    
-    <div id="nav-opcoes">
-        <ul>
-            <li><a href="">Início</a></li>
-            <li><a href="">O Projeto</a></li>
-            <li><a href="">Início</a></li>
-            <li><a href="">Contatos</a></li>
-        </ul>
-    </div>
+    <nav>
+        <div id="nav-logo">
+            <a href="">O LOGO AQUI</a>
+        </div>
 
-</nav>
+            <ul>
+                <li><a href="">Início</a></li>
+                <li><a href="">O Projeto</a></li>
+                <li><a href="">Início</a></li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+
+            <div id="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </nav>
+
+
+    <ul id="menu-responsivo">
+        <li><a href="">Início</a></li>
+        <li><a href="">O Projeto</a></li>
+        <li><a href="">Início</a></li>
+        <li><a href="">Contatos</a></li>
+    </ul>
+
+    
+
+
 
 {% endblock %}

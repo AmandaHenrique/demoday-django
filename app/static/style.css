@@ -1,9 +1,19 @@
+*{
+    margin: 0px;
+}
+
 body{
     margin: 0;
 }
 a{
     text-decoration: none;
-    color: brown;
+    color: white;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    color: #44B78B;
 }
 
 ul{
@@ -15,16 +25,59 @@ ul{
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
-    height: 100px;
+    background-color: #0C4B33;
+    height: 80px;
     align-items: center;
+
 }
 
-#nav-opcoes{
-    width: 50%;
+ul{
+    width: 40%;
 }
+
 
 #nav-logo{
     width: 40%;
     margin-left: 20px;
 }
+
+
+
+
+
+#hamburguer{
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+    border: white solid 1px;
+    padding: 4px;
+    border-radius: 5px;
+    align-items: center;
+    display: none;
+}
+
+span {
+    width: 35px;
+    height: 10%;
+    background-color: white;
+    border-radius: 120px;
+}
+
+
+#menu-responsivo{
+    display: none;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 40vh;
+}
+
+.showMenu{
+    display: flex;
+}
+
+
+

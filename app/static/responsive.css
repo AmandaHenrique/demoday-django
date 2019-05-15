@@ -1,0 +1,13 @@
+@media (max-width: 768px){
+
+    #hamburguer{
+        display: flex;
+        margin-right: 15px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    
+}
