@@ -6,6 +6,7 @@
 
 body{
     margin: 0;
+    color: #2f3040;
 }
 div.container{
     display: flex;
@@ -16,12 +17,11 @@ div.container{
 a{
     text-decoration: none;
     color: white;
-    font-size: 12pt;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
 }
 
 a:hover{
-    color: #44B78B;
+    color: rgb(241, 140, 24);
 }
 
 ul{
@@ -33,7 +33,7 @@ ul{
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #0C4B33;
+    background-color: #2f3040;
     height: 80px;
     align-items: center;
 
@@ -89,9 +89,6 @@ span {
 
 
 
-
-
-
 /*SECTION DE PROJETO*/
 section{
     width: 90%;
@@ -136,7 +133,7 @@ section div{
 /*SECTION DE CONTATOS*/
 
 #contatos{
-    background-color: rgb(154, 207, 187);
+    background-color: #2f304038;
     width: 100%;
     
 }
@@ -147,11 +144,31 @@ section div{
 
 
 
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #2f3040;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*NAO MEXER, CRIAR EM CIMA*/
 
 h4{
     font-weight: 100;
@@ -169,8 +186,8 @@ h3{
 hr{
     margin-bottom: 20px;
     width: 100px;
-    height: 1.5px;
-    background-color: black;
+    height: 2px;
+    background-color: #2f3040;
     border: none; 
 
 }
