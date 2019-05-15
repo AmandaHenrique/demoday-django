@@ -81,3 +81,20 @@ span {
 
 
 
+
+section{
+    background-color: blue;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around
+}
+
+section div{
+    background-color: yellow;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

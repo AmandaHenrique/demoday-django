@@ -9,5 +9,13 @@
         display: none;
     }
 
-    
+    section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    section div{
+        height: 10vh;
+    }
 }
