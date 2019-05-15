@@ -13,9 +13,24 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        height: 150vh;
     }
 
+
+
+
+    
     section div{
-        height: 10vh;
+        height: 30vh;
+        width: 60vw;
     }
+
+    section#sobre{
+        height: 200vh;
+    }
+
+    section#sobre div{
+        height: 65vh;
+    }
+
 }
