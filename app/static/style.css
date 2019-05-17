@@ -87,6 +87,27 @@ span {
     display: flex;
 }
 
+/*LISTRA DOS TITULOS*/
+.listra{
+    display: flex;
+    justify-content: center;    
+}
+
+.listra hr {
+    width: 50px;
+    height: 3px;
+    z-index: -1;
+    background-color: #2f3040;
+}
+.listra span hr{
+    z-index: 2;
+    height: 3px;
+    background-color: rgb(241, 140, 24);
+    position: absolute;
+
+}
+
+
 
 
 /*SECTION DE PROJETO*/
@@ -127,8 +148,24 @@ section div{
 
 .conteudo div{
     width: 30%;
-    padding: 10px;  
+    padding: 10px;
 }
+
+.conteudo div i{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: rgb(241, 140, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+i img{
+    width: 60px;
+}
+
 
 /*SECTION DE CONTATOS*/
 
@@ -152,12 +189,54 @@ footer{
     background-color: #2f3040;
 }
 
+/*HEADER*/
 
+header{
+    height: 78vh;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
 
+header h2 {
+    font-size: 30pt;
+    margin: 10px 10px 20px 10px ;
+}
 
+header div {
+    width:  80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+header button{
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(241, 140, 24);
+    width: 160px;
+    height: 50px;
+    border: 1px solid rgb(241, 140, 24);
+    border-radius: 100px;
+    
+}
 
-
+header button:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(241, 140, 24);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
 
 
 
@@ -186,13 +265,9 @@ h3{
 hr{
     margin-bottom: 20px;
     width: 100px;
-    height: 2px;
+    height: 3px;
     background-color: #2f3040;
     border: none; 
 
 }
 
-img{
-    width: 60px;
-    margin: 0px 0px 20px 0px;
-}
