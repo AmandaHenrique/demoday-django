@@ -127,26 +127,16 @@
         
         <div class="conteudo">
 
-            <div>
-                <i><img src="{% static 'placeholder.png'%}" alt=""></i>
-                <h4>Problema</h4>
-                <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
-    
-            </div>
-    
-            <div>
-                <i><img src="{% static 'placeholder.png'%}" alt=""></i>
-                <h4>Foco</h4>
-                <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
-        
-            </div>
-    
-            <div>
-                <i><img src="{% static 'placeholder.png'%}" alt=""></i>
-                <h4>Solução</h4>
-                <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
-    
-            </div>
+            <form action="post">
+                {% csrf_token %} <!--Evita ataque-->
+                {{ form.as_ul }}
+                <button type="submit">Solicitar</button>
+            
+                {% if msg  %}
+                    <h2>{{ msg }}</h2>
+                {% endif %}
+            </form>
+
         </div>
 </section>
 
