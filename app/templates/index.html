@@ -127,7 +127,7 @@
         
         <div class="conteudo">
 
-            <form action="post">
+            <form method="POST">
                 {% csrf_token %} <!--Evita ataque-->
                 {{ form.as_ul }}
                 <button type="submit">Solicitar</button>
