@@ -76,44 +76,65 @@
     </section>
 
 
-
-
-
-
-<section id="sobre-nos">
+    <section id="fatos">
         <div>
-            <h3>o time</h3>
+            <h3>Fatos</h3>
             <listra class="listra"><hr> <span><hr></span></listra>
         </div>
-    </section>
-
-    <section id="detalhes">
         
         <div class="conteudo">
 
-            <div>
-                <i><img src="{% static 'placeholder.png'%}" alt=""></i>
-                <h4>Scarlat</h4>
+            <div class="fato">
+                <i><img src="{% static 'alvo.png'%}" alt=""></i>
+                <h4>90%</h4>
                 <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
-    
             </div>
     
-            <div>
-                <i><img src="{% static 'placeholder.png'%}" alt=""></i>
-                <h4>Amanda Henrique</h4>
-                <p>Graduando em Jogos Digitais<br>Desenvolvedora de jogos e sites. <br><span>Email: </span>aamandahenrique@hotmail.com</p>
-                <a href=""><img src="" alt=""></a>
-        
-            </div>
-    
-            <div>
-                <i><img src="{% static 'placeholder.png'%}" alt=""></i>
-                <h4>Bianca J.</h4>
+            <div class="fato">
+                <i><img src="{% static 'ideia.png'%}" alt=""></i>
+                <h4>40%</h4>
                 <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
     
             </div>
         </div>
     </section>
+
+
+
+    <section id="sobre-nos">
+            <div>
+                <h3>o time</h3>
+                <listra class="listra"><hr> <span><hr></span></listra>
+            </div>
+        </section>
+
+        <section id="detalhes">
+            
+            <div class="conteudo">
+
+                <div>
+                    <i><img src="{% static 'placeholder.png'%}" alt=""></i>
+                    <h4>Scarlat</h4>
+                    <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
+        
+                </div>
+        
+                <div>
+                    <i><img src="{% static 'placeholder.png'%}" alt=""></i>
+                    <h4>Amanda Henrique</h4>
+                    <p>Graduando em Jogos Digitais<br>Desenvolvedora de jogos e sites. <br><span>Email: </span>aamandahenrique@hotmail.com</p>
+                    <a href=""><img src="" alt=""></a>
+            
+                </div>
+        
+                <div>
+                    <i><img src="{% static 'placeholder.png'%}" alt=""></i>
+                    <h4>Bianca J.</h4>
+                    <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
+        
+                </div>
+            </div>
+        </section>
 
 </div>
 
@@ -129,12 +150,15 @@
 
             <form method="POST">
                 {% csrf_token %} <!--Evita ataque-->
-                {{ form.as_ul }}
+                <div id="inputs">
+                    {{ form.as_p }}
+                </div>
+
                 <button type="submit">Solicitar</button>
             
-                {% if msg  %}
+                <!-- {% if msg  %}
                     <h2>{{ msg }}</h2>
-                {% endif %}
+                {% endif %} -->
             </form>
 
         </div>

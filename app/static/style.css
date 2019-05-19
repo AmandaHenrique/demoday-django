@@ -153,16 +153,48 @@ section div{
     width: 120px;
     height: 120px;
     border-radius: 100px;
-    background-color: rgb(241, 140, 24);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
 
+#detalhes .conteudo div i{
+    background-color: rgb(241, 140, 24);
+}
+
 i img{
     width: 60px;
 }
+
+/*SECTION FATOS*/
+
+#fatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.068);
+    width: 100%;
+}
+
+
+.fato i{
+    background-color: chartreuse;
+}
+
+#fatos .conteudo{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#fatos h4{
+    color: rgb(241, 140, 24);
+    font-weight: 700;
+}
+
+
 
 
 /*SECTION DE CONTATOS*/
@@ -170,12 +202,20 @@ i img{
 #contatos{
     background-color: #2f304038;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
 #contatos div.conteudo{
+    display: flex;
+    justify-content: center;
     width: 80%;
+    background-color: aqua
 }
+
 
 
 
@@ -226,7 +266,7 @@ a img{
 /*HEADER*/
 
 header{
-    height: 78vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: 100vw;
     display: flex; 
@@ -305,10 +345,5 @@ hr{
 
 }
 
-/*CONTATOS*/
-label{
-    background-color: aquamarine
-}
 
-input{
-}
+/*FORMULARIO*/
