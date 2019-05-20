@@ -33,9 +33,11 @@ ul{
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #2f3040;
+    background-color: #2f3040c0;
     height: 80px;
+    width: 100%;
     align-items: center;
+    position: fixed;
 
 }
 
@@ -159,16 +161,18 @@ i img{
 }
 
 #fatos div{
-    
+    width: 60%;
 }
+/*Essa diminui a div*/
 
 
 .fato i{
-    background-color: chartreuse;
+    background-color: rgb(241, 140, 24);
 }
 
 #fatos .conteudo{
     display: flex;
+    width: 70%;
     justify-content: space-around;
     text-align: center;
 }
