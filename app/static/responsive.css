@@ -22,4 +22,9 @@
         display: none;
     }
 
+    #inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
 }

@@ -85,26 +85,6 @@ ul{
     display: flex;
 }
 
-/*LISTRA DOS TITULOS*/
-.listra{
-    display: flex;
-    justify-content: center;    
-}
-
-.listra hr {
-    width: 50px;
-    height: 3px;
-    z-index: -1;
-    background-color: #2f3040;
-}
-.listra span hr{
-    z-index: 2;
-    height: 3px;
-    background-color: rgb(241, 140, 24);
-    position: absolute;
-
-}
-
 
 
 
@@ -174,8 +154,12 @@ i img{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.068);
+    background-color: rgba(0, 0, 0, 0.05);
     width: 100%;
+}
+
+#fatos div{
+    
 }
 
 
@@ -200,20 +184,25 @@ i img{
 /*SECTION DE CONTATOS*/
 
 #contatos{
-    background-color: #2f304038;
+    background-color: rgba(0, 0, 0, 0.05);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    padding-bottom: 50px;
+}
+
+#contatos div{
+    margin-bottom: 10px;
 }
 
 #contatos div.conteudo{
     display: flex;
     justify-content: center;
-    width: 80%;
-    background-color: aqua
+    width: 90%;
+    height: 200px;
+    margin-top: 0;
+    /* background-color: aqua */
 }
 
 
@@ -230,6 +219,7 @@ footer{
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
 footer p{
@@ -289,7 +279,7 @@ header div {
     align-items: center;
 }
 
-header button{
+button{
     margin-top: 20px;
     color: white;
     font-size: 16px;
@@ -304,7 +294,7 @@ header button{
     
 }
 
-header button:hover{
+button:hover{
     border: 1px solid white;
     background-color: white;
     color: rgb(241, 140, 24);
@@ -337,13 +327,48 @@ h3{
 }
 
 hr{
-    margin-bottom: 20px;
-    width: 100px;
+    margin-bottom: 50px;
+    width: 60px;
     height: 3px;
-    background-color: #2f3040;
+    background-color: rgb(241, 140, 24);
     border: none; 
 
 }
 
 
 /*FORMULARIO*/
+.form{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    /* background-color: aliceblue; */
+}
+
+.inputs input{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border: solid 1px rgb(105, 105, 105);
+    padding-left: 15px;
+}
+
+#inputs{
+    width: 60%;
+    height: 70%;
+}
+
+.label{
+    color: transparent;
+}
+
