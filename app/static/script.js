@@ -16,10 +16,6 @@ inputNome.setAttribute('placeholder', 'Seu Nome');
 
 //Scroll do navegador
 
-menu.forEach(item => {
-    console.log("sdsd");
-})
-
 function fu (){
     console.log('sdsdd')
 }
