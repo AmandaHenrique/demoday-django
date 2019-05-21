@@ -5,9 +5,9 @@
 {% block content %}
 
 
-    <nav>
+    <nav id="nave">
         <div id="nav-logo">
-            <h1><a href=""><img src=""></a></h1>
+            <h1 class="logo"><a href=""><img src="{% static 'logo.png' %}"></a></h1>
         </div>
 
             <ul>
@@ -28,7 +28,7 @@
         <div>
             <h2>Implemetando carreiras</h2>
             <p>com soluções de qualidade.</p>
-            <button>Comece agora</button>
+            <button OnClick="fu">Comece agora</button>
         </div>
     </header>
 
@@ -85,13 +85,13 @@
         <div class="conteudo">
 
             <div class="fato">
-                <i><img src="{% static 'alvo.png'%}" alt=""></i>
+                <i><img src="{% static 'graph.png'%}" alt=""></i>
                 <h4>90%</h4>
                 <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
             </div>
     
             <div class="fato">
-                <i><img src="{% static 'ideia.png'%}" alt=""></i>
+                <i><img src="{% static 'graph.png'%}" alt=""></i>
                 <h4>40%</h4>
                 <p> permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum</p>
     
@@ -166,7 +166,7 @@
 </section>
 
 <footer>
-    <h1>LOGO</h1>
+    <h1><a href=""><img src="{% static 'logo.png' %}"></a></h1>
 
     <div id="midias">
 
