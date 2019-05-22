@@ -16,9 +16,11 @@ inputNome.setAttribute('placeholder', 'Seu Nome');
 
 //Scroll do navegador
 
-function fu (){
-    console.log('sdsdd')
+
+funcao = () => {
+    console.log('OI')
 }
 
+menu.onclick = funcao;
 
 
